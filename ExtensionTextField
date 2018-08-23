@@ -1,0 +1,24 @@
+//
+//  ExtensionTextField.swift
+//  
+//
+//  Created by Shubham on 23/08/18.
+//  Copyright © 2018 Shubham. All rights reserved.
+//
+
+import Foundation
+import  UIKit
+
+extension UITextField{
+    
+    func isValidEmail() -> Bool {
+       let emailStr =  self.text
+        print("validate emailId: \(emailStr!)")
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        let result = emailTest.evaluate(with: emailStr)
+        print("👜",result)
+        return result
+    }
+
+}
