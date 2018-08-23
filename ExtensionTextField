@@ -22,3 +22,12 @@ extension UITextField{
     }
 
 }
+
+
+/*
+How to use 
+Create the outlet of the textfield and then access this functions 
+Its return type is bool , so that makes it easy to check if the email is valid and if not then u can show an alert 
+
+Thank You 
+*/
