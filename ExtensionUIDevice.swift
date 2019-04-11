@@ -1,9 +1,9 @@
 //
 //  ExtensionUIDevice.swift
-//  JcProviderApp
+//  shubshar.apps@gmail.com
 //
 //  Created by Shubham on 11/04/19.
-//  Copyright © 2019 com.smartitventures. All rights reserved.
+//  Copyright © 2019 Shubham. All rights reserved.
 //
 
 import Foundation
