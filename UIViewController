@@ -1,0 +1,21 @@
+import Foundation
+import UIKit
+
+extension UIViewController {
+    func simpleAlert(message: String, title: String = "") {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let oKAction = UIAlertAction(title: "Okay", style: UIAlertActionStyle.default, handler: nil)
+        alertController.addAction(oKAction)
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    func alertWithPop(message: String, title: String = "") {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let oKAction = UIAlertAction(title: "Okay", style: UIAlertActionStyle.default) { UIAlertAction in
+            self.navigationController?.popViewController(animated: true)
+        }
+        
+        alertController.addAction(oKAction)
+        self.present(alertController, animated: true, completion: nil)
+    }
+}
